@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <title>¡Welcome!</title>
   </head>
-  <body>
-    <div class="index_height">
-      <header class="index_head">
-        <ul class="index_menu">
-          <li><a href="">About me</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+  <body class="index_background">
+    <div class="height">
+      <header class="head">
+        <a href="./index.html">
+          <img src="./images/logo_blanco.png" alt="logo"
+        /></a>
+        <nav>
+          <ul class="menu">
+            <li><a href="./aboutMe.html">About me</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </header>
+
       <main class="index_main">
         <section class="index_card">
           <div class="index_text">
-            <img src="/images/logo_negro.png" alt="" />
+            <img src="./images/yobnR.png" alt="" />
 
             <div class="index_section">
               <div class="index_header">
-                <img src="/images/icons/hand-wave.png" alt="hand-wave" />
+                <!-- <img src="./images/icons/hand-wave.gif" alt="hand-wave" /> -->
                 <p>Hi, I'm Aarón</p>
               </div>
 
@@ -43,7 +50,10 @@
               <p class="CI">based in Canary Island, Spain.</p>
             </div>
           </div>
-          <a href="/aboutMe.html" class="index_a">More about me</a>
+          <div class="index_button">
+            <a href="./aboutMe.html" class="index_a">Read more</a>
+            <a href="./projects.html" class="index_a">My portfolio</a>
+          </div>
         </section>
       </main>
     </div>
