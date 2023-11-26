@@ -5,40 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/btnAnimation.css" />
     <title>¡Welcome!</title>
   </head>
-  <body class="index_background">
+  <body class="index_background scroll">
     <div class="height">
-      <header class="head">
-        <a href="./index.html">
-          <img src="./images/logo_blanco.png" alt="logo"
-        /></a>
-        <nav>
-          <ul class="menu">
-            <li><a href="./aboutMe.html">About me</a></li>
-            <li><a href="./skills.html">Skills</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
       <main class="index_main">
+        <div class="index_social">
+          <a href="">
+            <img src="./images/icons/githubM.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./images/icons/linkedinM.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./images/icons/mailM.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./images/icons/instagramM.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="./images/icons/whatsappM.svg" alt="" />
+          </a>
+        </div>
         <section class="index_card">
           <div class="index_text">
-            <img src="./images/yobnR.png" alt="" />
+            <img src="./images/yo2.png" alt="" />
 
             <div class="index_section">
               <div class="index_header">
-                <!-- <img src="./images/icons/hand-wave.gif" alt="hand-wave" /> -->
                 <p>Hi, I'm Aarón</p>
               </div>
 
@@ -51,9 +52,31 @@
             </div>
           </div>
           <div class="index_button">
-            <a href="./aboutMe.html" class="index_a">Read more</a>
-            <a href="./projects.html" class="index_a">My portfolio</a>
+            <ul class="index_btnAn">
+              <li>
+                <a href="./aboutMe.html" class="index_a"
+                  >Read more
+                  <span class="border border-top"></span>
+                  <span class="border border-right"></span>
+                  <span class="border border-bottom"></span>
+                  <span class="border border-left"></span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="index_btnAn">
+              <li>
+                <a href="./projects.html" class="index_a"
+                  >My Portfolio
+                  <span class="border border-top"></span>
+                  <span class="border border-right"></span>
+                  <span class="border border-bottom"></span>
+                  <span class="border border-left"></span>
+                </a>
+              </li>
+            </ul>
           </div>
+          <img src="./images/logo_negro.png" alt="logo" class="index_logo" />
         </section>
       </main>
     </div>
