@@ -42,7 +42,7 @@ main {
 .head {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   width: 100%;
   display: flex;
@@ -69,9 +69,13 @@ main {
   text-decoration: none;
   color: white;
 }
+#menuNav .menu a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
 .head_menu {
   padding: 10px 50px 30px 50px;
-  height: 22vh;
+  height: 23vh;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -90,6 +94,7 @@ main {
 }
 .h1_menu {
   margin: 30px 0 10px 0;
+  color: white;
 }
 .img_menu {
   margin-bottom: 10px;
@@ -221,7 +226,7 @@ main {
 }
 
 .index_title {
-  font-size: 80px;
+  font-size: 75px;
 }
 .index_title .WD {
   color: black;
@@ -280,6 +285,7 @@ main {
   -ms-transition: all 1s;
   -o-transition: all 1s;
 }
+
 /**About me**/
 
 /**Projects**/
@@ -365,8 +371,158 @@ main {
   background: none;
   border: none;
 }
+
+/**Contact**/
+.contact_body {
+  background: url(../images/fondo5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact_head_menu {
+  height: 12vh;
+  padding: 10px 50px 30px 50px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  position: fixed;
+  z-index: 999;
+}
+.contact_main {
+  height: 90%;
+}
+.contact_primary {
+  max-width: 70%;
+  margin: 12vh auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form {
+  width: 80%;
+  margin: 3rem;
+}
+.contact_form legend {
+  text-align: left;
+  color: white;
+}
+.contact_country {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact_data_country {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  max-width: 230px;
+}
+.contact_data1,
+.contact_data2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.contact_data3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact_data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact_data label,
+.contact_country label {
+  color: white;
+}
+.contact_data input {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.contact_data_country input {
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.contact_data_country select {
+  border-radius: 10px 0 0 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+.contact_data textarea {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  color: white;
+  width: 100%;
+}
+.contact_a {
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 15px 0;
+  font-size: 20px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  color: black;
+
+  background-color: #326fa4;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+.contact_a_input {
+  background-color: transparent;
+  border: none;
+  padding: 15px 35px;
+}
 /**MediaQuery**/
 @media (max-width: 1500px) {
+  .index_background {
+    background-position-y: -200px;
+  }
+  .index_text img {
+    width: 200px;
+    margin-left: -15rem;
+  }
+  .index_social {
+    left: 8vh;
+    height: 456px;
+  }
+  .index_title {
+    font-size: 60px;
+  }
+  .index_card {
+    width: 75%;
+  }
   .projects_project {
     max-width: 95%;
   }
@@ -377,6 +533,23 @@ main {
 @media (max-width: 1000px) {
   .head {
     width: 100%;
+  }
+  .index_main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+  .index_social {
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    position: inherit;
+  }
+  .index_card {
+    margin-top: -200rem;
+  }
+  .index_text {
+    flex-direction: column;
   }
   .projects_project {
     max-width: 80vh;
@@ -397,7 +570,7 @@ main {
     margin-bottom: 20px;
   }
   .head_menu {
-    height: 50vh;
+    height: 30vh;
     max-width: 100%;
   }
   .nav_menu {
@@ -420,6 +593,28 @@ main {
   .h3_menu {
     display: none;
   }
+  .contact_body {
+    background-position-x: -500px;
+    background-repeat: repeat-y;
+  }
+  .contact_main {
+    height: 90%;
+    margin-bottom: 15rem;
+  }
+  .contact_primary {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .contact_data1,
+  .contact_data2 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .contact_data,
+  .contact_data_country {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -431,6 +626,48 @@ main {
   }
   .h3_menu {
     display: none;
+  }
+  .contact_body {
+    background-repeat: repeat-y;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/fondo5.jpg);
+    background-position-x: -500px;
+  }
+  .contact_main {
+    height: 75%;
+    margin-bottom: 20rem;
+  }
+  .contact_primary {
+    max-width: 50rem;
+    margin-top: 1.9vh;
+    background-color: transparent;
+    border-radius: none;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+  }
+  .contact_form {
+    width: 48rem;
+  }
+  .contact_data1,
+  .contact_data2 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .contact_data,
+  .contact_data_country {
+    margin-bottom: 2rem;
+  }
+  .contact_data input::placeholder {
+    color: white;
+  }
+  .contact_data3 textarea::placeholder {
+    color: white;
+  }
+  .contact_data_country input::placeholder {
+    color: white;
   }
 }
 

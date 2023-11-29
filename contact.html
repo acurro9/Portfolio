@@ -5,44 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/btnAnimation.css" />
+    <script src="./js/jQuery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Contact</title>
   </head>
-  <body>
+  <body class="contact_body" onload="checkWidth()">
     <div class="height">
-      <header class="head head_menu">
+      <header class="head contact_head_menu" id="head_menu">
         <div class="nav_menu">
           <a href="./index.html">
             <img src="./images/logo_blanco.png" alt="logo"
           /></a>
-          <nav>
-            <ul class="menu">
+          <nav id="menuNav" class="visible">
+            <ul class="menu" id="menuNav2">
+              <li><a href="./index.html">Index</a></li>
               <li><a href="./aboutMe.html">About me</a></li>
               <li><a href="./skills.html">Skills</a></li>
               <li><a href="./projects.html">Projects</a></li>
-              <li><a href="./contact.html" class="active">Contact</a></li>
+              <li>
+                <a href="./contact.html" class="active">Contact</a>
+              </li>
             </ul>
           </nav>
+          <button id="btnC" class="projects_btn hidden">
+            <img
+              src="./images/icons/close.svg"
+              alt=""
+              class="img_menu hidden"
+              id="menuImgC"
+            />
+          </button>
+          <button id="btnM" class="projects_btn hidden">
+            <img
+              src="./images/icons/menu.svg"
+              alt=""
+              id="menuImg"
+              class="hidden img_menu"
+            />
+          </button>
         </div>
-        <h1 class="h1_menu">Aarón Curro Solla</h1>
-        <h4 class="h3_menu">Web Developer & Programmer</h4>
       </header>
 
-      <main>
-        <!--Botón para descargar el curriculum-->
+      <main class="contact_main">
+        <div class="contact_primary">
+          <form action="" class="contact_form">
+            <fieldset>
+              <legend>Contact me</legend>
+              <div class="contact_data1">
+                <div class="contact_data">
+                  <label for="name">Name: </label>
+                  <input type="text" placeholder="Name & surname" />
+                </div>
+                <div class="contact_data">
+                  <label for="email">Email: </label>
+                  <input type="mail" placeholder="Mail" />
+                </div>
+              </div>
+              <div class="contact_data2">
+                <div class="contact_country">
+                  <label for="tel">Telephone number: </label>
+                  <div class="contact_data_country">
+                    <select name="country">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                    <input type="tlf" placeholder="684561247" />
+                  </div>
+                </div>
+                <div class="contact_data">
+                  <label for="sln">Subject Line: </label>
+                  <input type="text" placeholder="Subject" />
+                </div>
+              </div>
+              <div class="contact_data3">
+                <div class="contact_data">
+                  <label for="msj">Message: </label>
+                  <textarea
+                    name="msj"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="What's on your mind? "
+                  ></textarea>
+                </div>
+              </div>
+              <ul class="contact_btnAn">
+                <li>
+                  <a class="contact_a"
+                    ><input
+                      type="submit"
+                      value="Send It"
+                      class="contact_a_input"
+                    />
+                    <span class="border border-top"></span>
+                    <span class="border border-right"></span>
+                    <span class="border border-bottom"></span>
+                    <span class="border border-left"></span>
+                  </a>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
       </main>
-
       <footer class="footer">
         <div class="leftFooter">
           <div class="links">
-            <!-- Links con un icono para twitter, linkedin, github y gmail (en flex row) -->
             <a href="">
               <img src="./images/icons/github.svg" alt="" />
             </a>
@@ -55,14 +131,18 @@
             <a href="">
               <img src="./images/icons/instagram.svg" alt="" />
             </a>
+            <a href="">
+              <img src="./images/icons/whatsapp.svg" alt="" />
+            </a>
           </div>
           <div class="copy">
             <img src="./images/icons/copyrigth.svg" alt="" />
-            <p>Todos los derechos reservados</p>
+            <p>All rigths reserved</p>
           </div>
         </div>
-        <nav>
+        <nav id="footer_menu">
           <ul class="menu">
+            <li><a href="./index.html">Index</a></li>
             <li><a href="./aboutMe.html">About me</a></li>
             <li><a href="./skills.html">Skills</a></li>
             <li><a href="./projects.html">Projects</a></li>
@@ -71,5 +151,7 @@
         </nav>
       </footer>
     </div>
+    <script src="./js/display.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
