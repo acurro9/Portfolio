@@ -5,45 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,700&family=Roboto:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/btnAnimation.css" />
+    <script src="./js/jQuery.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>About me</title>
   </head>
-  <body>
+  <body class="about_background" onload="checkWidth()">
     <div class="height">
-      <header class="head head_menu">
+      <header class="head head_menu" id="head_menu">
         <div class="nav_menu">
-          <a href="./index.html">
+          <a href="./index.html" id="menu_a">
             <img src="./images/logo_blanco.png" alt="logo"
           /></a>
-          <nav>
-            <ul class="menu">
+          <h1 class="h1_menu hidden underline" id="menuP">About me</h1>
+          <nav id="menuNav" class="visible">
+            <ul class="menu" id="menuNav2">
+              <li><a href="./index.html">Index</a></li>
               <li><a href="./aboutMe.html" class="active">About me</a></li>
-              <li><a href="./skills.html">Skills</a></li>
               <li><a href="./projects.html">Projects</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
+          <button id="btnC" class="projects_btn hidden">
+            <img
+              src="./images/icons/close.svg"
+              alt=""
+              class="img_menu hidden"
+              id="menuImgC"
+            />
+          </button>
+          <button id="btnM" class="projects_btn hidden">
+            <img
+              src="./images/icons/menu.svg"
+              alt=""
+              id="menuImg"
+              class="hidden img_menu"
+            />
+          </button>
         </div>
-        <h1 class="h1_menu">Aarón Curro Solla</h1>
-        <h4 class="h3_menu">Web Developer & Programmer</h4>
+        <div id="menuP2" class="visible menu_p2">
+          <h1 class="h1_menu name">Aarón Curro Solla</h1>
+          <h4 class="h3_menu">Web Developer & Programmer</h4>
+        </div>
       </header>
 
-      <main>
-        <!--Botón para descargar el curriculum y para ir al formulario de contacto-->
+      <main class="about_main">
+        <div class="about_card">
+          <section class="about_me">
+            <img src="./images/yo2.png" alt="" />
+            <div class="about_me_letters">
+              <h2>Hello, my name is Aaron.</h2>
+              <p>
+                I am a last year web development student at Ies Ana Luisa
+                Benitez in Gran Canaria. I have knowledge of HTML5, CSS3, Java
+                and Responsives Webs. I am passionate about computers, and have
+                been so since I was young. I have an interest in both hardware
+                and software. My goal is to become a full stack developer.
+              </p>
+              <div class="about_me_links">
+                <div class="about_me_cv">
+                  <h4>My CV:</h4>
+                  <a href="" class="about_resume">Resume</a>
+                </div>
+                <div class="about_me_social">
+                  <a href="https://github.com/acurro9?tab=repositories">
+                    <img src="./images/icons/github.svg" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="./images/icons/linkedin.svg" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="./images/icons/mail.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="about_skills">
+            <h2 class="about_skills_h1">My Skills:</h2>
+          </div>
+
+          <div class="about_contact">
+            <h4>Interested in collaborating with me?</h4>
+            <p>
+              I'm always open to discussing product development work or
+              partnership opportunities.
+            </p>
+            <a class="about_contact_link" href="./contact.html">
+              <img
+                class="about_contact_img"
+                src="./images/icons/chat.svg"
+                alt=""
+              />Start a conversation</a
+            >
+          </div>
+        </div>
       </main>
 
       <footer class="footer">
         <div class="leftFooter">
           <div class="links">
-            <!-- Links con un icono para twitter, linkedin, github y gmail (en flex row) -->
-            <a href="">
+            <a href="https://github.com/acurro9?tab=repositories">
               <img src="./images/icons/github.svg" alt="" />
             </a>
             <a href="">
@@ -55,21 +123,26 @@
             <a href="">
               <img src="./images/icons/instagram.svg" alt="" />
             </a>
+            <a href="">
+              <img src="./images/icons/whatsapp.svg" alt="" />
+            </a>
           </div>
           <div class="copy">
             <img src="./images/icons/copyrigth.svg" alt="" />
-            <p>Todos los derechos reservados</p>
+            <p>All rigths reserved</p>
           </div>
         </div>
-        <nav>
+        <nav id="footer_menu">
           <ul class="menu">
+            <li><a href="./index.html">Index</a></li>
             <li><a href="./aboutMe.html">About me</a></li>
-            <li><a href="./skills.html">Skills</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
       </footer>
     </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/display.js"></script>
   </body>
 </html>
