@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/btnAnimation.css" />
     <script src="./js/jQuery.js"></script>
@@ -21,7 +22,7 @@
       <header class="head contact_head_menu" id="head_menu">
         <div class="nav_menu">
           <a href="./index.html">
-            <img src="./images/logo_blanco.png" alt="logo"
+            <img src="./images/logo_blanco.png" alt="logo" class="menu_logo"
           /></a>
           <nav id="menuNav" class="visible">
             <ul class="menu" id="menuNav2">
@@ -33,7 +34,7 @@
               </li>
             </ul>
           </nav>
-          <button id="btnC" class="projects_btn hidden">
+          <button id="btnC" class="menu_btn hidden">
             <img
               src="./images/icons/close.svg"
               alt=""
@@ -41,7 +42,7 @@
               id="menuImgC"
             />
           </button>
-          <button id="btnM" class="projects_btn hidden">
+          <button id="btnM" class="menu_btn hidden">
             <img
               src="./images/icons/menu.svg"
               alt=""
@@ -54,7 +55,7 @@
 
       <main class="contact_main">
         <div class="contact_primary">
-          <form action="" class="contact_form">
+          <form action="/php/contact.php" class="contact_form">
             <fieldset>
               <legend>Contact me</legend>
               <div class="contact_data1">
@@ -96,21 +97,38 @@
                   ></textarea>
                 </div>
               </div>
-              <ul class="contact_btnAn">
-                <li>
-                  <a class="contact_a"
-                    ><input
-                      type="submit"
-                      value="Send It"
-                      class="contact_a_input"
-                    />
-                    <span class="border border-top"></span>
-                    <span class="border border-right"></span>
-                    <span class="border border-bottom"></span>
-                    <span class="border border-left"></span>
-                  </a>
-                </li>
-              </ul>
+              <div class="contact_form_btn">
+                <ul class="contact_btnAn">
+                  <li>
+                    <a class="contact_a"
+                      ><input
+                        type="submit"
+                        value="Send It"
+                        class="contact_a_input"
+                      />
+                      <span class="border border-top"></span>
+                      <span class="border border-right"></span>
+                      <span class="border border-bottom"></span>
+                      <span class="border border-left"></span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="contact_btnAn">
+                  <li>
+                    <a class="contact_a"
+                      ><input
+                        type="reset"
+                        value="Reset"
+                        class="contact_a_input"
+                      />
+                      <span class="border border-top"></span>
+                      <span class="border border-right"></span>
+                      <span class="border border-bottom"></span>
+                      <span class="border border-left"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
           </form>
         </div>
@@ -118,17 +136,20 @@
       <footer class="footer">
         <div class="leftFooter">
           <div class="links">
-            <a href="https://github.com/acurro9?tab=repositories">
+            <a
+              href="https://github.com/acurro9?tab=repositories"
+              target="_blank"
+            >
               <img src="./images/icons/github.svg" alt="" />
             </a>
-            <a href="">
+            <a
+              href="https://es.linkedin.com/in/aaron-curro-solla-714b73258"
+              target="_blank"
+            >
               <img src="./images/icons/linkedin.svg" alt="" />
             </a>
-            <a href="">
+            <a href="mailto:asbarxas.aaroncurro@gmail.com" target="_blank">
               <img src="./images/icons/mail.svg" alt="" />
-            </a>
-            <a href="">
-              <img src="./images/icons/instagram.svg" alt="" />
             </a>
             <a href="">
               <img src="./images/icons/whatsapp.svg" alt="" />

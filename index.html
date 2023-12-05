@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <noscript>Your browser does not support JavaScript!</noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/btnAnimation.css" />
 
@@ -17,11 +19,17 @@
 
     <title>¡Welcome!</title>
   </head>
-  <body class="index_background scroll" onload="checkJs()">
+  <body class="index_background scroll">
     <div class="height">
       <main class="index_main">
         <div class="index_blur">
-          <img src="./images/logo_blanco.png" alt="logo" class="index_logo" />
+          <img
+            src="./images/logo_blanco.png"
+            alt="logo"
+            class="index_logo"
+            id="index_logo"
+            onclick=" btn_animation();"
+          />
           <div id="index_h1">
             <h1 class="index_h1">
               Hi, I'm Aaron, a web developer and programmer.
@@ -35,7 +43,9 @@
         </div>
       </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/indexAnimations.js"></script>
     <script src="./js/checkJs.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/type.js"></script>

@@ -15,6 +15,7 @@ $(window).resize(function () {
     changeCSS(".projects_project", "backdrop-filter", "none");
     changeCSS(".projects_project", "box-shadow", "none");
     changeCSS(".projects_project", "border", "none");
+    changeCSS("#head_menu", "height", "10vh");
   } else {
     changeCSS(".footer", "justify-content", "space-between");
     changeCSS(".footer", "height", "10%");
@@ -124,4 +125,19 @@ function checkWidth() {
       changeCSS(".footer", "justify-content", "space-between");
     }
   }
+}
+
+function logoSpin() {
+  // reset animation
+  removeLogoSpin();
+  // trigger reflow
+  triggerReflow();
+  // start animation
+  addLogoSpin();
+}
+
+function btn_animation() {
+  // fireworks();
+  // logoSpin();
+  snow();
 }

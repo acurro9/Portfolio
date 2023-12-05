@@ -1,0 +1,218 @@
+/**About me**/
+.about_background {
+  background: url(../images/fondo4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -500px;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+}
+.about_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.about_card {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  margin-top: 20vh;
+}
+.about_me {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.about_me_letters {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.about_me_links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 100%;
+}
+.about_me img {
+  max-width: 300px;
+  margin-right: 5rem;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.about_me_letters p {
+  text-align: left;
+}
+
+.about_resume {
+  text-decoration: none;
+  padding: 15px 45px;
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: black;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.about_me_social a {
+  text-decoration: none;
+}
+.about_skills {
+  margin-top: 2rem;
+  width: 100%;
+}
+.about_skills_title {
+  line-height: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+/* .about_skills_logos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.about_skills_logos img {
+  width: 70px;
+  height: 70px;
+}
+.about_skills_logos_p {
+  color: black;
+} */
+.about_table {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+.about_table td {
+  width: 16%;
+}
+.about_table img {
+  width: 70px;
+  height: 70px;
+}
+.about_projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+.about_projects_img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about_projects_pro {
+  position: relative;
+}
+.about_projects_pro img {
+  max-width: 350px;
+  height: 250px;
+}
+.about_projects_pro:hover a {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-content: center;
+}
+.about_projects_link {
+  display: none;
+  width: 350px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  color: white;
+}
+.about_projects_link img {
+  max-width: 70px;
+  height: 70px;
+}
+.about_projects_see {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.about_projects_see a {
+  padding: 15px 45px;
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.about_playlists {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.about_playlists_embed {
+  width: 100%;
+}
+.about_playlists_embed iframe {
+}
+.about_contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.about_contact_link {
+  padding: 15px 45px;
+  border: 2px solid black;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 350px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.about_contact_img {
+  max-width: 20px;
+  margin-right: 20px;
+}
+/**MediaQuery**/
+@media (max-width: 1500px) {
+}
+@media (max-width: 900px) {
+}
+
+@media (max-width: 500px) {
+}

@@ -1,0 +1,106 @@
+/**Projects**/
+.projects_body {
+  background: url(../images/fondo3.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+.projects_main {
+  padding-left: 0;
+  padding-right: 0;
+}
+.projects_project {
+  max-width: 80%;
+  margin: 26vh auto 0 auto;
+  padding: 3.5rem;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.projects_flex {
+  display: flex;
+  flex-direction: column;
+}
+.projects_photo {
+  line-height: 0;
+  transition: all 0.5s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.projects_photo h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+}
+.projects_photo p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 100%;
+}
+.projects_photo img {
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.projects_photo:hover h1 {
+  color: white;
+  z-index: 2;
+}
+.projects_photo:hover p {
+  color: white;
+  z-index: 2;
+}
+.projects_photo:hover img {
+  filter: brightness(0.4);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  z-index: 1;
+  -webkit-filter: brightness(0.4);
+}
+
+/**MediaQuery**/
+@media (max-width: 1500px) {
+}
+@media (max-width: 1000px) {
+  .projects_project {
+    max-width: 80vh;
+    flex-direction: column;
+  }
+  .projects_photo {
+    margin-bottom: 20px;
+  }
+  .projects_photo img {
+    max-width: 450px;
+  }
+}
+@media (max-width: 900px) {
+  .projects_project {
+    max-width: 100%;
+  }
+  .projects_photo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+}
