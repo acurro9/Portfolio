@@ -24,7 +24,6 @@
           <a href="./index.html" id="menu_a">
             <img src="./images/logo_blanco.png" alt="logo" class="menu_logo"
           /></a>
-          <h1 class="h1_menu hidden underline" id="menuP">About me</h1>
           <nav id="menuNav" class="visible">
             <ul class="menu" id="menuNav2">
               <li><a href="./index.html">Index</a></li>
@@ -51,7 +50,7 @@
           </button>
         </div>
         <div id="menuP2" class="visible menu_p2">
-          <h1 class="h1_menu name">Aarón Curro Solla</h1>
+          <h1 class="h1_menu name orange">Aarón Curro Solla</h1>
           <h4 class="h3_menu">Web Developer & Programmer</h4>
         </div>
       </header>
@@ -79,19 +78,19 @@
                     href="https://github.com/acurro9?tab=repositories"
                     target="_blank"
                   >
-                    <img src="./images/icons/githubM.svg" alt="" />
+                    <img src="./images/icons/github.svg" alt="" />
                   </a>
                   <a
                     href="https://es.linkedin.com/in/aaron-curro-solla-714b73258"
                     target="_blank"
                   >
-                    <img src="./images/icons/linkedinM.svg" alt="" />
+                    <img src="./images/icons/linkedin.svg" alt="" />
                   </a>
                   <a
                     href="mailto:asbarxas.aaroncurro@gmail.com"
                     target="_blank"
                   >
-                    <img src="./images/icons/mailM.svg" alt="" />
+                    <img src="./images/icons/mail.svg" alt="" />
                   </a>
                 </div>
               </div>
@@ -99,7 +98,7 @@
           </section>
           <section class="about_skills">
             <div class="about_skills_title">
-              <h2 class="about_skills_h1">Skills & Tools:</h2>
+              <h2 class="about_skills_h1 orange">Skills & Tools:</h2>
               <p class="abour_skills_p">
                 The skills, tools and technologies I use to bring products to
                 life:
@@ -206,7 +205,7 @@
             </table>
           </section>
           <section class="about_projects">
-            <h2 class="about_projects_h1">Projects:</h2>
+            <h2 class="about_projects_h1 orange">Projects:</h2>
             <div class="about_projects_img">
               <div class="about_projects_pro">
                 <img src="/images/projects/drogo.png" alt="" />
@@ -235,7 +234,7 @@
             </div>
           </section>
           <section class="about_playlists">
-            <h2 class="about_playlists_h1">Favourite Playlists:</h2>
+            <h2 class="about_playlists_h1 orange">Playlists:</h2>
             <div class="about_playlist_embed">
               <iframe
                 width="560"
@@ -257,8 +256,50 @@
               ></iframe>
             </div>
           </section>
+
+          <section class="about_widget">
+            <h2 class="orange">Where to find me?</h2>
+            <div class="about_widget_map">
+              <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <script>
+                  (function () {
+                    var setting = {
+                      query:
+                        "Calle Ana Benítez, 15, Las Palmas de Gran Canaria, España",
+                      width: 800,
+                      height: 400,
+                      satellite: false,
+                      zoom: 16,
+                      placeId: "ChIJa0hXg7mVQAwRuSYnHABVhm4",
+                      cid: "0x6e8655001c2726b9",
+                      coords: [28.0976547, -15.4393596],
+                      lang: "es",
+                      queryString:
+                        "Calle Ana Benítez, 15, Las Palmas de Gran Canaria, España",
+                      centerCoord: [28.0976547, -15.4393596],
+                      id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                      embed_id: "1038885",
+                    };
+                    var d = document;
+                    var s = d.createElement("script");
+                    s.src =
+                      "https://1map.com/js/script-for-user.js?embed_id=1038885";
+                    s.async = true;
+                    s.onload = function (e) {
+                      window.OneMap.initMap(setting);
+                    };
+                    var to = d.getElementsByTagName("script")[0];
+                    to.parentNode.insertBefore(s, to);
+                  })();
+                </script>
+                <a href="https://1map.com/es/map-embed">1 Map</a>
+              </div>
+            </div>
+          </section>
+
           <section class="about_contact">
-            <h4>Interested in collaborating with me?</h4>
+            <h4 class="orange">Interested in collaborating with me?</h4>
             <p>
               I'm always open to discussing product development work or
               partnership opportunities.
@@ -301,6 +342,7 @@
             <p>All rigths reserved</p>
           </div>
         </div>
+
         <nav id="footer_menu">
           <ul class="menu">
             <li><a href="./index.html">Index</a></li>

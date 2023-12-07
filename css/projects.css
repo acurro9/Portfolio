@@ -1,8 +1,9 @@
 /**Projects**/
 .projects_body {
-  background: url(../images/fondo3.jpg);
+  /* background: url(../images/fondo3.jpg);
   background-size: cover;
-  background-repeat: repeat-y;
+  background-repeat: repeat-y; */
+  background-color: #1f2028;
 }
 .projects_main {
   padding-left: 0;
@@ -13,10 +14,10 @@
   margin: 26vh auto 0 auto;
   padding: 3.5rem;
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(5px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);*/
+  border: 2px solid #e25e3e;
+  box-shadow: 0 0 40px #e25e3e;
   display: flex;
   justify-content: center;
 }
@@ -55,16 +56,17 @@
   width: 100%;
 }
 .projects_photo img {
-  width: 100%;
+  width: 450px;
   object-fit: cover;
   z-index: -2;
 }
 .projects_photo:hover h1 {
-  color: white;
+  color: #e25e3e;
   z-index: 2;
+  width: 100%;
 }
 .projects_photo:hover p {
-  color: white;
+  color: #e25e3e;
   z-index: 2;
 }
 .projects_photo:hover img {
@@ -75,9 +77,8 @@
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
   z-index: 1;
-  -webkit-filter: brightness(0.4);
+  -webkit-filter: brightness(0.2);
 }
-
 /**MediaQuery**/
 @media (max-width: 1500px) {
 }

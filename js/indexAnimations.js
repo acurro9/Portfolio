@@ -74,3 +74,6 @@ var fireworks = () => {
     });
   }, 250);
 };
+window.addEventListener("wheel", function () {
+  window.location.href = "http://127.0.0.1:5500/aboutMe.html";
+});

@@ -9,7 +9,7 @@
 .index_btnAn .border {
   position: absolute;
   left: 0;
-  background: #463b8b;
+  background: white;
 }
 .index_btnAn .border-top,
 .index_btnAn .border-bottom {
@@ -72,7 +72,7 @@
 .contact_btnAn .border {
   position: absolute;
   left: 0;
-  background: #b118a5;
+  background: white;
 }
 .contact_btnAn .border-top,
 .contact_btnAn .border-bottom {

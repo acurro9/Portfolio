@@ -1,26 +1,29 @@
 /**About me**/
 .about_background {
-  background: url(../images/fondo4.jpg);
+  /*background: url(../images/fondo4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -500px;
-  /* background-color: rgba(0, 0, 0, 0.8); */
+  */
+  background-color: #1f2028;
 }
 .about_main {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10rem;
+  color: white;
 }
 
 .about_card {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(102, 37, 73, 0.3);
   border-radius: 10px;
   backdrop-filter: blur(15px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 40px;
+  padding: 40px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +39,9 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+.about_me_letters h2 {
+  color: rgb(226, 94, 62);
 }
 .about_me_links {
   display: flex;
@@ -55,20 +61,24 @@
 .about_me_letters p {
   text-align: left;
 }
+.about_me_cv h4 {
+  color: rgb(226, 94, 62);
+}
 
 .about_resume {
   text-decoration: none;
   padding: 15px 45px;
-  border: 2px solid black;
+  border: 2px solid rgb(226, 94, 62);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  color: black;
+  color: rgb(226, 94, 62);
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(226, 94, 62);
+    color: black;
   }
 }
 .about_me_social a {
@@ -112,7 +122,9 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: center;
+  width: 100%;
 }
+
 .about_projects_img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -121,7 +133,7 @@
   position: relative;
 }
 .about_projects_pro img {
-  max-width: 350px;
+  max-width: 385px;
   height: 250px;
 }
 .about_projects_pro:hover a {
@@ -132,7 +144,7 @@
 }
 .about_projects_link {
   display: none;
-  width: 350px;
+  width: 385px;
   height: 250px;
   position: absolute;
   top: 0;
@@ -155,16 +167,17 @@
 }
 .about_projects_see a {
   padding: 15px 45px;
-  border: 2px solid black;
+  border: 2px solid rgb(226, 94, 62);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   text-decoration: none;
-  color: black;
+  color: rgb(226, 94, 62);
   &:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(226, 94, 62);
+    color: black;
   }
 }
 .about_playlists {
@@ -173,10 +186,11 @@
   align-items: flex-start;
   width: 100%;
 }
-.about_playlists_embed {
+.about_playlist_embed {
   width: 100%;
-}
-.about_playlists_embed iframe {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 .about_contact {
   width: 100%;
@@ -188,7 +202,7 @@
 }
 .about_contact_link {
   padding: 15px 45px;
-  border: 2px solid black;
+  border: 2px solid rgb(226, 94, 62);
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -196,17 +210,22 @@
   -o-border-radius: 50px;
   width: 350px;
   text-decoration: none;
-  color: black;
+  color: rgb(226, 94, 62);
   font-weight: 600;
   margin-top: 2rem;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
 }
 .about_contact_img {
   max-width: 20px;
   margin-right: 20px;
+}
+.about_widget {
+  text-align: left;
+  width: 100%;
+}
+.about_widget_map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 /**MediaQuery**/
 @media (max-width: 1500px) {
