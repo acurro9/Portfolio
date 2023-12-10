@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -500px;
-  /* backdrop-filter: brightness(0.8); */
 }
 .index_main {
   height: 100%;
@@ -12,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 }
 .index_blur {
@@ -81,9 +80,16 @@
 @media (max-width: 1000px) {
 }
 @media (max-width: 900px) {
+  .index_background {
+    background-position-y: 0;
+  }
 }
 
 @media (max-width: 500px) {
+  .index_background {
+    background-position-y: 0;
+    background-position-x: -150px;
+  }
 }
 
 /**Keyframes*/

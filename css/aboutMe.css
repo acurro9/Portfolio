@@ -1,29 +1,16 @@
 /**About me**/
 .about_background {
-  /*background: url(../images/fondo4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -500px;
-  */
   background-color: #1f2028;
 }
 .about_main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10rem;
   color: white;
 }
 
 .about_card {
   text-align: center;
-  /* background-color: rgba(255, 255, 255, 0.2);
-  background-color: rgba(102, 37, 73, 0.3);
-  border-radius: 10px;
-  backdrop-filter: blur(15px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-  padding: 40px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +22,30 @@
   flex-direction: row;
   align-items: flex-start;
 }
+/**Slider */
+/* .about_slider {
+  width: 95%;
+  margin: auto;
+  margin-right: 2rem;
+  overflow: hidden;
+}
+
+.about_slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: change 20s infinite alternate linear;
+  -webkit-animation: change 20s infinite alternate linear;
+}
+
+.about_slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.about_slider img {
+  width: 100%;
+} */
 .about_me_letters {
   display: flex;
   flex-direction: column;
@@ -51,6 +62,7 @@
 }
 .about_me img {
   max-width: 300px;
+  max-height: 300px;
   margin-right: 5rem;
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
@@ -95,17 +107,16 @@
   align-items: flex-start;
   margin-bottom: 3rem;
 }
-/* .about_skills_logos {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+.about_skills_logos {
+  display: none;
 }
 .about_skills_logos img {
   width: 70px;
   height: 70px;
 }
 .about_skills_logos_p {
-  color: black;
-} */
+  color: white;
+}
 .about_table {
   width: 100%;
   margin-bottom: 5rem;
@@ -133,9 +144,10 @@
   position: relative;
 }
 .about_projects_pro img {
-  max-width: 385px;
+  width: 385px;
   height: 250px;
 }
+
 .about_projects_pro:hover a {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -229,9 +241,133 @@
 }
 /**MediaQuery**/
 @media (max-width: 1500px) {
+  .about_projects_link,
+  .about_projects_pro img {
+    width: 275px;
+    height: 185px;
+  }
+  .about_projects_link img {
+    width: 50px;
+    height: 50px;
+  }
 }
 @media (max-width: 900px) {
+  .about_card {
+    margin-top: 0vh;
+    width: 100%;
+  }
+  .about_me {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_me img {
+    margin-right: 0;
+  }
+  .about_me_letters {
+    align-items: center;
+  }
+  .about_me_letters p {
+    text-align: justify;
+  }
+  .about_me_links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_me_cv {
+    margin-bottom: 5rem;
+  }
+  .about_me_social {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .about_skills_title {
+    line-height: 20px;
+  }
+  .about_skills_logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about_table {
+    display: none;
+  }
+  .about_projects_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about_playlist_embed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_widget {
+    height: 500px;
+  }
+  .about_widget_map {
+    display: flex;
+    align-items: center;
+  }
+  .about_map {
+    width: 560px;
+    height: 315px;
+  }
+  .about_contact {
+    line-height: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
+  .about_me_letters p {
+    text-align: center;
+  }
+  .about_me_social {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+  }
+  .about_skills_logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about_playlist_embed iframe {
+    width: 300px;
+  }
+  .about_map {
+    width: 300px;
+    height: 315px;
+  }
+}
+
+/**Keyframes*/
+@keyframes change {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }

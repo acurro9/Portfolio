@@ -26,7 +26,6 @@ http
       case ".svg":
         contentType = "image/svg+xml";
         break;
-      // Puedes agregar más casos según las extensiones de archivos que necesites manejar
     }
 
     fs.readFile(filePath, function (err, data) {

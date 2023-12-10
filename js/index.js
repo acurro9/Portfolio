@@ -1,5 +1,6 @@
 //Cambiar clases dependiendo del width
 $(window).resize(function () {
+  //En caso de width menor o igual a 900px
   if ($(window).width() <= 900) {
     showMenuP();
     hideMenuNav();
@@ -36,10 +37,11 @@ $(window).resize(function () {
   }
 });
 
-//Mustra u oculta el menú desplegable
+//Muestra u oculta el menú desplegable
 let displayX = document.getElementById("menuNav2");
 let btnM = document.getElementById("btnM");
 let btnC = document.getElementById("btnC");
+//Botón para abrir menú
 btnM.addEventListener("click", () => {
   hideMenuP();
   showMenuNav();
@@ -50,12 +52,13 @@ btnM.addEventListener("click", () => {
   changeCSS("#head_menu", "backdrop-filter", "blur(5px)");
   changeCSS("#head_menu", "box-shadow", "0 0 40px rgba(8, 7, 16, 0.6)");
   changeCSS("#head_menu", "border", "2px solid rgba(255, 255, 255, 0.1)");
+  changeCSS("#head_menu", "height", "15vh");
   if ($(window).width() <= 900) {
     changeCSS("#head_menu", "height", "100%");
     changeCSS("#menuNavv2", "margin-top", "10rem");
   }
 });
-
+//Botón para cerrar el menú
 btnC.addEventListener("click", () => {
   showMenuP();
   hideMenuNav();
@@ -68,15 +71,18 @@ btnC.addEventListener("click", () => {
   changeCSS("#head_menu", "box-shadow", "none");
   changeCSS("#head_menu", "border", "none");
 
+  //En caso de width menor o igual a 900pxs
   if ($(window).width() <= 900) {
     changeCSS("#head_menu", "height", "10vh");
     changeCSS("#menuNavv2", "margin-top", "0");
   }
 });
 
-//Cambiar menú al scrollear
+//Cambiar el menú al hacer scroll
 window.addEventListener("scroll", () => {
+  //En caso de width mayor a 900px
   if ($(window).width() > 900) {
+    //En caso de no estar en el top de la página
     if ($(window).scrollTop() === 0) {
       hideMenuP();
       hideMenuImg();
@@ -106,8 +112,9 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-
+//Chequea el width al cargar la página para cambiar el menú
 function checkWidth() {
+  //En caso de width menor o igual a 900px
   if ($(window).width() <= 900) {
     hideMenuNav();
     showMenuImg();
@@ -115,7 +122,7 @@ function checkWidth() {
     showBtnM();
 
     changeCSS("#head_menu", "height", "10vh");
-    changeCSS(".projects_project", "margin-top", "10vh");
+    changeCSS(".projects_project", "margin-top", "2vh");
     changeCSS(".projects_project", "background-color", "transparent");
     changeCSS(".projects_project", "backdrop-filter", "none");
     changeCSS(".projects_project", "box-shadow", "none");
@@ -128,6 +135,7 @@ function checkWidth() {
     changeCSS("#head_menu", "box-shadow", "none");
     changeCSS("#head_menu", "border", "none");
   } else {
+    //En caso de no estar en el top de la página
     if ($(window).scrollTop() !== 0) {
       hideMenuNav();
       showMenuImg();
@@ -147,18 +155,30 @@ function checkWidth() {
     }
   }
 }
-
-function logoSpin() {
-  // reset animation
-  removeLogoSpin();
-  // trigger reflow
-  triggerReflow();
-  // start animation
-  addLogoSpin();
-}
-
-function btn_animation() {
-  // fireworks();
-  // logoSpin();
-  snow();
-}
+//Widget google maps
+(function () {
+  var setting = {
+    query: "Calle Ana Benítez, 15, Las Palmas de Gran Canaria, España",
+    width: 800,
+    height: 400,
+    satellite: false,
+    zoom: 16,
+    placeId: "ChIJa0hXg7mVQAwRuSYnHABVhm4",
+    cid: "0x6e8655001c2726b9",
+    coords: [28.0976547, -15.4393596],
+    lang: "es",
+    queryString: "Calle Ana Benítez, 15, Las Palmas de Gran Canaria, España",
+    centerCoord: [28.0976547, -15.4393596],
+    id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+    embed_id: "1038885",
+  };
+  var d = document;
+  var s = d.createElement("script");
+  s.src = "https://1map.com/js/script-for-user.js?embed_id=1038885";
+  s.async = true;
+  s.onload = function (e) {
+    window.OneMap.initMap(setting);
+  };
+  var to = d.getElementsByTagName("script")[0];
+  to.parentNode.insertBefore(s, to);
+})();

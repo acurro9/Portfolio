@@ -1,8 +1,5 @@
 /**Contact**/
 .contact_body {
-  /* background: url(../images/fondo5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
   background-color: #1f2028;
 }
 .contact_head_menu {
@@ -22,9 +19,6 @@
 .contact_primary {
   max-width: 50%;
   margin: 12vh auto;
-  /* background-color: rgba(102, 37, 73, 0.3); */
-  /* border-radius: 10px; */
-  /* backdrop-filter: blur(15px); */
   border: 2px solid #e25e3e;
   box-shadow: 0 0 40px #e25e3e;
   padding: 40px;
@@ -115,21 +109,32 @@
 }
 /**MediaQuery**/
 @media (max-width: 1500px) {
+  .contact_main {
+    margin-bottom: 10rem;
+    height: 70rem;
+  }
+  .contact_primary {
+    padding: 20px;
+    margin-top: 5rem;
+  }
+  .contact_form {
+    margin: 1rem;
+  }
 }
 @media (max-width: 1000px) {
 }
 @media (max-width: 900px) {
-  .contact_body {
-    background-position-x: -500px;
-    background-repeat: repeat-y;
+  .contact_head_menu {
+    position: inherit;
   }
   .contact_main {
-    height: 90%;
-    margin-bottom: 15rem;
+    height: 77rem;
+    margin-bottom: 0rem;
   }
   .contact_primary {
     max-width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 0vh;
+    margin-top: -3vh;
   }
   .contact_data1,
   .contact_data2 {
@@ -143,16 +148,10 @@
 }
 
 @media (max-width: 500px) {
-  .contact_body {
-    background-repeat: repeat-y;
-    backdrop-filter: blur(5px);
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../images/fondo5.jpg);
-    background-position-x: -500px;
-  }
   .contact_main {
     height: 75%;
-    margin-bottom: 20rem;
+    margin-bottom: 230px;
+    padding-top: 1rem;
   }
   .contact_primary {
     max-width: 50rem;
@@ -180,5 +179,9 @@
   }
   .contact_data3 textarea::placeholder {
     color: white;
+  }
+  .contact_form_btn {
+    display: flex;
+    flex-direction: column;
   }
 }

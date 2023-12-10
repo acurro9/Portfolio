@@ -1,13 +1,16 @@
+//Añadir la clase que realiza la animación
 var addLogoSpin = () => {
   $("#index_logo").addClass("index_logo_spin");
 };
+//Eliminar la clase que realiza la animación
 var removeLogoSpin = () => {
   $("#index_logo").removeClass("index_logo_spin");
 };
+//Recargar el elemento con id index_logo
 var triggerReflow = () => {
   $("#index_logo").width();
 };
-
+//Animación de la nieve
 var snow = () => {
   var duration = 15 * 250;
   var animationEnd = Date.now() + duration;
@@ -43,7 +46,7 @@ var snow = () => {
     }
   })();
 };
-
+//Animación de fuegos artificiales
 var fireworks = () => {
   var duration = 15 * 250;
   var animationEnd = Date.now() + duration;
@@ -74,6 +77,23 @@ var fireworks = () => {
     });
   }, 250);
 };
+//En caso de hacer scroll nos redirige a otra página
 window.addEventListener("wheel", function () {
   window.location.href = "http://127.0.0.1:5500/aboutMe.html";
 });
+
+//Animación de rotación del logo
+function logoSpin() {
+  // reset animation
+  removeLogoSpin();
+  // trigger reflow
+  triggerReflow();
+  // start animation
+  addLogoSpin();
+}
+//Animación que realiza el logo
+function btn_animation() {
+  // fireworks();
+  // logoSpin();
+  snow();
+}
