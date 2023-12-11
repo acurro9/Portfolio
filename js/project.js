@@ -159,7 +159,7 @@ function createProjects(arrayP) {
         paragraph.textContent = String(arrayP[y][x].getDescription());
         //Se crea el elemento img, se le asigna la url con el elemento image de la instancia y el id correspondiente
         var image = document.createElement("img");
-        let imgSRC = "/images/projects/" + arrayP[y][x].getImage();
+        let imgSRC = "./images/projects/" + arrayP[y][x].getImage();
         image.src = imgSRC;
         image.alt = arrayP[y][x].getTitle();
         image.id = "projects_img";
