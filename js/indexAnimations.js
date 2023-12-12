@@ -77,10 +77,6 @@ var fireworks = () => {
     });
   }, 250);
 };
-//En caso de hacer scroll nos redirige a otra página
-window.addEventListener("wheel", function () {
-  window.location.href = "http://127.0.0.1:5500/aboutMe.html";
-});
 
 //Animación de rotación del logo
 function logoSpin() {
@@ -97,3 +93,8 @@ function btn_animation() {
   // logoSpin();
   snow();
 }
+
+//En caso de hacer scroll nos redirige a otra página
+window.addEventListener("wheel", function () {
+  window.location.href = "http://127.0.0.1:5500/aboutMe.html";
+});

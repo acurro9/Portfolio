@@ -71,9 +71,17 @@ function validation() {
       );
       //En caso afirmativo se imprime un mensaje en caso negativo otro
       if (result) {
-        alert("Message send successfully!");
         const sendDate = new Date();
-        console.log("The message was sent on " + sendDate);
+        let msg = {
+          name: document.getElementById("contact_name").value,
+          email: document.getElementById("contact_mail").value,
+          tlf: document.getElementById("contact_tlf").value,
+          subject: document.getElementById("contact_subject").value,
+          msg: document.getElementById("contact_msg").value,
+          date: sendDate,
+        };
+        alert("Message send successfully!");
+        //A partir de aquí se guarda en la base de datos con php el mensaje con la fecha
       } else {
         alert("Message deleted");
       }

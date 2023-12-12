@@ -100,12 +100,17 @@
   margin-top: 2rem;
   width: 100%;
 }
+.about_skills_p {
+  display: none;
+}
+.about_skills_td {
+  text-align: left;
+}
 .about_skills_title {
   line-height: 1px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 3rem;
 }
 .about_skills_logos {
   display: none;
@@ -283,6 +288,13 @@
   }
   .about_skills_title {
     line-height: 20px;
+    margin-bottom: 3rem;
+  }
+  .about_skills_p {
+    display: block;
+  }
+  .about_skills_p2 {
+    display: none;
   }
   .about_skills_logos {
     display: grid;
