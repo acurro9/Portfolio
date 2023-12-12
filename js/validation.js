@@ -72,6 +72,8 @@ function validation() {
       //En caso afirmativo se imprime un mensaje en caso negativo otro
       if (result) {
         alert("Message send successfully!");
+        const sendDate = new Date();
+        console.log("The message was sent on " + sendDate);
       } else {
         alert("Message deleted");
       }

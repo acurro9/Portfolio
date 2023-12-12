@@ -6,6 +6,11 @@
   font-family: "ikaros2";
   src: url("../fonts/Ikaros-Regular.otf");
 }
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
 
 /**Globals**/
 html {
